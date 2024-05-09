@@ -10,6 +10,6 @@ import {HeaderComponent} from './components/header/header.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title : string = 'my-angular-first';
+  title : string = 'my-angular-first-2раз';
   isDisabled=false;//true;
 }
