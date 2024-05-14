@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {HeaderComponent} from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import {HeaderComponent} from './components/header/header.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title : string = 'my-angular-first-2раз';
+  title : string = 'my-angular-first-4раз';
   isDisabled=false;//true;
+
 }
