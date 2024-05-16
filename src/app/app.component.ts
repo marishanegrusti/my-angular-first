@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import {HeaderComponent} from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import {TodoListComponent} from './components/todo-list/todo-list.component';
+import { ITask } from './components/todo-list/todo-list.type';
 //import {ITask} from './components/todo-list/todo-list.type';
 
 
