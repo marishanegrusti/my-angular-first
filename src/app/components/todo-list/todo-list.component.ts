@@ -8,7 +8,7 @@ import { ITask } from './todo-list.type';
   templateUrl: './todo-list.component.html',
   styleUrl: './todo-list.component.css'
 })
-export class TodoListComponent implements OnInit {
+export class TodoListComponent  {  //implements OnInit
   //@Input() tasks: ITask[] = [title: 'Це заголовок1',  discription: 'Це коментар1'];
   @Input() tasks: ITask[] = [];
   @Output() taskChanged: EventEmitter<ITask>;
