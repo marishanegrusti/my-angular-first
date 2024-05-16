@@ -9,8 +9,8 @@ import { ITask } from './todo-list.type';
   styleUrl: './todo-list.component.css'
 })
 export class TodoListComponent  {  //implements OnInit
-  //@Input() tasks: ITask[] = [ title: 'Це заголовок1',  discription: 'Це коментар1'];
-  @Input() tasks: ITask[] = [];
+  //@Input() task: ITask[] = [ title: 'Це заголовок1',  discription: 'Це коментар1'];
+  @Input() task: ITask[] = [];
   @Output() taskChanged: EventEmitter<ITask>;
 
   constructor() { 
