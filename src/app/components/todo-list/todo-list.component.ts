@@ -9,8 +9,11 @@ import { ITask } from './todo-list.type';
   styleUrl: './todo-list.component.css'
 })
 export class TodoListComponent  {  //implements OnInit
-  //@Input() task: ITask[] = [ title: 'Це заголовок1',  discription: 'Це коментар1'];
-  @Input() task: ITask[] = [];
+  // @Input() task: ITask= { title: 'Title88_app-todo-list',  description: 'Comentar1'}
+
+  // @Input() tasks: ITask[] =  [{title: 'Test_00TodoListComponent', description: 'Description_00'} , {title: 'Test_11', description: 'Description_11'}] ;
+  @Input() tasks: ITask[] = [];
+  // @Input() tasks: ITask[] =[{title: 'Test', description: 'Test Description'} , {title: 'Test 1', description: 'Test Description 1'}] 
   @Output() taskChanged: EventEmitter<ITask>;
 
   constructor() { 
