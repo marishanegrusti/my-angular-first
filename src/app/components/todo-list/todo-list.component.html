@@ -1,7 +1,9 @@
-<p>todo-list works! теперь не одинокий елемент</p>
+<p>todo-list works! теперь не одинокий елемент 19_5_2024</p>
 <div>
-    <span >
-        <!-- <span (click)="onTaskClick(task)">    -->
+    <!-- <span > -->
+    <span (click)="onTaskClick({title: 'Test0', description: 'Description0'} )">   
+      <!-- <span (click)="onTaskClick(tasks)">    -->
+      <!-- <span (click)="onTaskClick(tasks)"></span> -->
        
        {{ tasks[0].title }} 
        {{ tasks[0].description}} 
@@ -10,4 +12,21 @@
        
        <!-- {{task.title}} -->
     </span>
+   
+    <ul> 
+        <!-- <li *ngFor="let item of tasks; trackBy: trackByItemId"> -->
+          <li *ngFor="let item of tasks; ">
+          {{ item.title }}: {{ item.description }}
+        </li>
+    </ul>
+  
+      <!-- <button *ngFor="let item of articles" (click)="goToArticle(item.id)">
+        {{item.title}}
+      </button> -->
+
+
+    <!-- <li *ngFor="let item of items; trackBy: trackByItemId"> -->
+        <!-- {{ item.id }}: {{ item.name }} -->
+      <!-- </li> -->
+
 </div>
