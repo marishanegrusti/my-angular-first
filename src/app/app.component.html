@@ -6,11 +6,13 @@
 <app-home></app-home>
 <app-home></app-home>
 <app-header></app-header>
-<app-todo-list [tasks]="tasks"></app-todo-list>
+<!-- <app-todo-list [tasks]="tasks"></app-todo-list> -->
 
-<!-- <app-todo-list [tasks]="tasks" (taskChanged)="onTaskClick($event)"></app-todo-list> -->
+<!-- <app-todo-list [tasks]="tasks" (taskChanged)="onTaskClick($event)" (taskChanged)="onTaskClick2($event)"  ></app-todo-list> -->
+<!-- <app-todo-list [tasks]="tasks" (taskChanged)="onTaskClick($event)"></app-todo-list>
+<app-todo-list [tasks]="tasks" (taskChanged)="onTaskClick2($event)"></app-todo-list> -->
 
-
+<app-todo-list [tasks]="tasks" (taskChanged)="onTaskClick($event)" (taskChanged2)="onTaskClick2($event)"  ></app-todo-list>
 <!-- <app-todo-list [tasks]="tasks" (taskChanged)="onTaskChange($event)"></app-todo-list> -->
 
 

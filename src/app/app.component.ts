@@ -19,10 +19,27 @@ export class AppComponent {
   //onTaskClick=true;
   // tasks = [{title: 'новий т 17'},{title : 'новий заголовок 22'}];
   //tasks = [{title: 'Test0', description: 'Description0'} , {title: 'Test1', description: 'Description1'}] ;
-  tasks: ITask[] =  [{title: 'Заголовок1_родительский', description: 'Содержание1_род.'} , {title: 'Title_2', description: 'Description_2'}] ;
+  tasks: ITask[] =  [{title: 'Заголовок1_родительский', description: 'Содержание1_род.', color: 'red'} , {title: 'Title_2', description: 'Description_2'}] ;
+  // task1: ITask ={title: 'tit1', description: 'Des1'} ;
   // task: ITask= { title: 'Title88_app-root',  description: 'Comentar1'}
 
   
+  public onTaskClick(changedTask: ITask): void {
+    console.log("changedTask_from_perent=",changedTask)
+    // this.tasks.push(changedTask) ;
+    this.tasks.push({...changedTask, color: 'green'}) ;
+
+  }
+
+  public onTaskClick2(changedTask: ITask): void {
+    console.log("changedTask_from_perent_blue=",changedTask)
+    // this.tasks.push(changedTask) ;
+    this.tasks.push({...changedTask, color: 'blue'}) ;
+
+  }
+
+
+
   // protected readonly onTaskClick = onTaskClick;
 
   // onTaskClick($event: string) {

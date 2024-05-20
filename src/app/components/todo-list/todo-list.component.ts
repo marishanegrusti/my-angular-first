@@ -14,59 +14,26 @@ export class TodoListComponent  {  //implements OnInit
 
   // @Input() tasks: ITask[] =  [{title: 'Test_00TodoListComponent', description: 'Description_00'} , {title: 'Test_11', description: 'Description_11'}] ;
   @Input() tasks: ITask[] = [];
+  
   // @Input() tasks: ITask[] =[{title: 'Test', description: 'Test Description'} , {title: 'Test 1', description: 'Test Description 1'}] 
   @Output() taskChanged: EventEmitter<ITask>;
-// trackByItemId: TrackByFunction<ITask> | undefined;
+  @Output() taskChanged2: EventEmitter<ITask>;
 
   constructor() { 
     this.taskChanged = new EventEmitter();
+    this.taskChanged2 = new EventEmitter();
+    
   }
-  
-
-  // onClick() {
-  //   this.articleChange.emit(this.articleViewer.title)
-  // }
 
   public onTaskClick(changedTask: ITask): void {
-    // this.taskChanged.emit({ title: 'Title88_app-todo-list',  description: 'Comentar1'})
+    console.log("changedTask=",changedTask)
     this.taskChanged.emit(changedTask)
+    
+  }
 
+  public onTaskClick2(changedTask: ITask): void {
+    console.log("changedTask2=",changedTask)
+   this.taskChanged2.emit(changedTask)
+    // taskChanged2
   }
 }
-
-//==============
-// *@Component*  
-// ({
-// selector: 'zippy',
-// template: `
-// <div class="zippy">
-// <div (click)="toggle()">Toggle</div>
-// <div [hidden]="!visible">
-// <ng-content></ng-content>
-// </div>
-// </div>`})
-// export class Zippy {
-// visible: boolean = true;  
-
-// *@Output* — () open: EventEmitter<any> = new EventEmitter();  
-
-// *@Output*  
-// () close: EventEmitter<any> = new EventEmitter();
-
-// toggle() {
-// this.visible = !this.visible;
-// if (this.visible) {
-// this.open.emit(null);
-// } else {
-// this.close.emit(null);
-// }
-// }
-// }
-// Access the event object with the $event argument passed to the output event handler:
-
-// <zippy (open)="onOpen($event)" (close)="onClose($event)"></zippy>
-// @see — Observables in Angular
-
-// @publicApi
-
-// @publicApi
