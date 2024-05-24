@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HeroService } from '../../hero.service';
+
 
 @Component({
   selector: 'app-home',
@@ -8,5 +10,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
+  constructor(public heroService: HeroService) {
+  }
+  onHomeClick() {
+  console.log(this.heroService.headerItems)
+  }
 
 }

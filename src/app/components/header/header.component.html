@@ -4,7 +4,7 @@
 
 <ul *ngIf="items.length">
   <li *ngFor="let item of items; trackBy: trackByItemId">
-    {{ item.id }}: {{ item.name }}
+    {{ item.id }}: {{ item.name }} ::  {{ item.title }} :::  {{ item.description }} 
   </li>
 </ul>
 
