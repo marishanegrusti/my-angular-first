@@ -20,7 +20,7 @@
            
           <li *ngFor="let item of tasks;" (click)="onTaskClick( item )"  [class]="item.color"  >
             <!-- <span [class]="item.color"  >{{ item.title }}: {{ item.description }}</span> -->
-          {{ item.title }}: {{ item.description }}
+          {{ item.title }}:=> {{ item.description }}
         </li>
     </ul>
     <!-- <h3 [ngClass]="articleViewer.title === 'BMW'?'red':'green'" (click)="onClick()">{{articleViewer.text}}</h3> -->

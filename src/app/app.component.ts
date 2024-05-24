@@ -8,7 +8,7 @@ import { ITask } from './components/todo-list/todo-list.type';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent, HomeComponent, TodoListComponent],
+  imports: [RouterOutlet, HeaderComponent, HomeComponent, TodoListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -19,7 +19,9 @@ export class AppComponent {
   //onTaskClick=true;
   // tasks = [{title: 'новий т 17'},{title : 'новий заголовок 22'}];
   //tasks = [{title: 'Test0', description: 'Description0'} , {title: 'Test1', description: 'Description1'}] ;
-  tasks: ITask[] =  [{title: 'Заголовок1_родительский', description: 'Содержание1_род.', color: 'red'} , {title: 'Title_2', description: 'Description_2'}] ;
+  tasks: ITask[] =  [{title: 'Заголовок1_родительский', description: 'Содержание1_род.', color: 'red'} , 
+                     {title: 'Title_2', description: 'Description_2'}
+                    ] ;
   // task1: ITask ={title: 'tit1', description: 'Des1'} ;
   // task: ITask= { title: 'Title88_app-root',  description: 'Comentar1'}
 
